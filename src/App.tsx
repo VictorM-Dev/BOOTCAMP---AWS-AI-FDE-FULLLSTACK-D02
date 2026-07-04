@@ -1,8 +1,13 @@
+import Container from "./components/Container"
+import Header from "./components/Header"
+import Home from "./pages/Home/page"
+
 const App = () => {
   return (
-    <div>
-      <h1>Início do projeto</h1>
-    </div>
+    <>
+      <Container className="bg-[#FFF]"><Header></Header></Container>
+      <Home className=""></Home>
+    </>
   )
 }
 
