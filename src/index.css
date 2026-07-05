@@ -5,12 +5,23 @@
 :root{
   --primary: #FFF;
   --over-primary: #000;
+
+  --secundary: #FFF3E3;
+  --over-secundary: #B88E2F;
+
+  --primary-text: #333;
 }
 @theme {
   --breakpoint-fr: 1386px;
+  --breakpoint-xxs: 400px;
   --font-montserrat: "Montserrat";
   --font-poppins: "Poppins";
 
   --color-primary: var(--primary);
   --color-over-primary: var(--over-primary);
+
+  --color-secundary: var(--secundary);
+  --color-over-secundary: var(--over-secundary);
+
+  --color-primary-text: var(--primary-text);
 }
