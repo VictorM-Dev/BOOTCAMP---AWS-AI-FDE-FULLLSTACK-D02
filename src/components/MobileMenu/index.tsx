@@ -16,7 +16,7 @@ const MobileMenu = ({ className }: MobileMenuProps) => {
         onClick={() => setAtivo(!ativo)}
       ></LuMenu>
       <NavMenu
-        className={`absolute flex-col top-16.25 -right-2 h-[calc(100vh-100px)] max-w-[50vw] min-w-62.5 bg-[#FFF] justify-center items-center gap-5 ${ativo?"flex":"hidden"}`}
+        className={`absolute flex-col top-16.25 -right-2 h-[calc(100vh-100px)] max-w-[50vw] min-w-62.5 bg-primary justify-center items-center gap-5 ${ativo?"flex":"hidden"}`}
       >
         <RightMenu className="mt-6"></RightMenu>
       </NavMenu>
