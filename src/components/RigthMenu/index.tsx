@@ -1,21 +1,24 @@
+import clsx from "clsx";
+
 type RightMenuProps = {
   className?: string;
 };
 const RightMenu = ({ className }: RightMenuProps) => {
+  const LinkHover: string = "hover:cursor-pointer hover:scale-110 transition";
   return (
-    <div className={`flex gap-[33.66px] ${className}`}>
-      <a className="hover:cursor-pointer hover:scale-110 transition">
+    <div className={clsx("flex gap-[33.66px]", className)}>
+      <a className={clsx(LinkHover)}>
         <img
           src="/Icons/alert.svg"
           alt="Ícone de alerta"
-          className="max-h-[18.66px]"
+          className={clsx("max-h-[18.66px]")}
         ></img>
       </a>
-      <a className="hover:cursor-pointer hover:scale-110 transition">
+      <a className={clsx(LinkHover)}>
         <img
           src="/Icons/shop.svg"
           alt="Ícone de usuário"
-          className="max-h-[22.05px]"
+          className={clsx("max-h-[22.05px]")}
         ></img>
       </a>
     </div>
