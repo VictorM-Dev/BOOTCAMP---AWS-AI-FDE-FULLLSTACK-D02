@@ -10,6 +10,7 @@
   --over-secundary: #B88E2F;
 
   --primary-text: #333;
+  --primary-text-100: #666;
 }
 @theme {
   --breakpoint-fr: 1386px;
@@ -24,4 +25,6 @@
   --color-over-secundary: var(--over-secundary);
 
   --color-primary-text: var(--primary-text);
+  --color-primary-text-100: var(--primary-text-100);
+
 }
