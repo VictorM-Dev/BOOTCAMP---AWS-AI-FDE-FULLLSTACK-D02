@@ -11,7 +11,6 @@ const Header = () => {
         className={clsx(
           "flex justify-center items-center",
           "h-25 w-full max-w-360",
-          "fr:pt-7.25 fr:pl-13.5 fr:pr-25 fr:items-stretch",
           "fixed z-50",
           "bg-primary",
         )}
@@ -20,16 +19,13 @@ const Header = () => {
           className={clsx(
             "flex justify-between items-center",
             "w-full px-2 max-h-10.25",
-            "fr:px-0 fr:relative fr:justify-center",
+            "md:px-4",
+            "lg:px-12.5",
           )}
         >
-          <Logo className={clsx("fr:absolute fr:left-0")}></Logo>
-          <NavMenu
-            className={clsx("hidden", "md:flex", "fr:absolute")}
-          ></NavMenu>
-          <RightMenu
-            className={clsx("hidden", "md:flex", "fr:absolute fr:right-0")}
-          ></RightMenu>
+          <Logo></Logo>
+          <NavMenu className={clsx("hidden", "md:flex")}></NavMenu>
+          <RightMenu className={clsx("hidden", "md:flex")}></RightMenu>
           <MobileMenu className={clsx("flex", "md:hidden")}></MobileMenu>
         </div>
       </div>

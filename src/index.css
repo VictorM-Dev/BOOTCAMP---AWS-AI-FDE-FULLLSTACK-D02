@@ -13,7 +13,6 @@
   --primary-text-100: #666;
 }
 @theme {
-  --breakpoint-fr: 1386px;
   --breakpoint-xxs: 400px;
   --font-montserrat: "Montserrat";
   --font-poppins: "Poppins";
