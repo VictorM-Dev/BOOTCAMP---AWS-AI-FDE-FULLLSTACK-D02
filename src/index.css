@@ -9,8 +9,12 @@
   --secundary: #FFF3E3;
   --over-secundary: #B88E2F;
 
+  --card-product: #F4F5F7;
+  --over-card-product: #898989;
+
   --primary-text: #333;
   --primary-text-100: #666;
+  --primaty-text-200: #3A3A3A;
 }
 @theme {
   --breakpoint-xxs: 400px;
@@ -20,10 +24,13 @@
   --color-primary: var(--primary);
   --color-over-primary: var(--over-primary);
 
+  --color-card-product: var(--card-product);
+  --color-over-card-product: var(--over-card-product);
+
   --color-secundary: var(--secundary);
   --color-over-secundary: var(--over-secundary);
 
   --color-primary-text: var(--primary-text);
   --color-primary-text-100: var(--primary-text-100);
-
+  --color-primary-text-200: var(--primary-text-200);
 }
