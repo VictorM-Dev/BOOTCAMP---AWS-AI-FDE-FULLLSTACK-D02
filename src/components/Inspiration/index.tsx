@@ -5,8 +5,10 @@ import InspirationCaroucel from "../InspirationCaroucel";
 
 const Inspiration = () => {
   return (
-    <div className={clsx("py-11", "flex items-center flex-wrap justify-center")}>
-      <div className={clsx("min-w-141 pl-25 pr-10.5 py-10")}>
+    <div
+      className={clsx("py-11", "flex items-center flex-wrap justify-center gap-10.5")}
+    >
+      <div className={clsx("w-105.5 p-4")}>
         <h1
           className={clsx(
             "text-[40px] text-primary-text-200 font-bold font-poppins leading-12",
@@ -24,8 +26,11 @@ const Inspiration = () => {
           className={clsx("h-12 w-44", "font-semibold text-[16px] normal-case")}
         ></HeroButton>
       </div>
-      <InspirationCard></InspirationCard>
-      <div><InspirationCaroucel></InspirationCaroucel></div>
+
+      <div className={clsx("flex flex-wrap gap-6 justify-center")}>
+        <InspirationCard></InspirationCard>
+        <InspirationCaroucel></InspirationCaroucel>
+      </div>
     </div>
   );
 };
