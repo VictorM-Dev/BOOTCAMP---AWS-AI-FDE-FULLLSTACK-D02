@@ -9,6 +9,8 @@
   --secundary: #FFF3E3;
   --over-secundary: #B88E2F;
 
+  --inspiration: #FCF8F3;
+
   --card-product: #F4F5F7;
   --over-card-product: #898989;
 
@@ -29,6 +31,8 @@
 
   --color-secundary: var(--secundary);
   --color-over-secundary: var(--over-secundary);
+
+  --color-inspiration: var(--inspiration);
 
   --color-primary-text: var(--primary-text);
   --color-primary-text-100: var(--primary-text-100);

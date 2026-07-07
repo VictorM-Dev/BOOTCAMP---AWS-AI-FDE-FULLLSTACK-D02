@@ -1,6 +1,7 @@
 import Categories from "../../components/Categories";
 import Container from "../../components/Container";
 import Hero from "../../components/Hero";
+import Inspiration from "../../components/Inspiration";
 import OurProducts from "../../components/OurProducts";
 
 const Home = () => {
@@ -14,6 +15,9 @@ const Home = () => {
       </Container>
       <Container>
         <OurProducts></OurProducts>
+      </Container>
+      <Container className="bg-inspiration">
+        <Inspiration></Inspiration>
       </Container>
     </div>
   );
