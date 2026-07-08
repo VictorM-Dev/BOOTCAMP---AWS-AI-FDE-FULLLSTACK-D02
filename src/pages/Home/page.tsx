@@ -2,6 +2,7 @@ import Categories from "../../components/Categories";
 import Container from "../../components/Container";
 import Hero from "../../components/Hero";
 import Inspiration from "../../components/Inspiration";
+import Mosaic from "../../components/Mosaic";
 import OurProducts from "../../components/OurProducts";
 
 const Home = () => {
@@ -18,6 +19,9 @@ const Home = () => {
       </Container>
       <Container className="bg-inspiration">
         <Inspiration></Inspiration>
+      </Container>
+      <Container>
+        <Mosaic></Mosaic>
       </Container>
     </div>
   );
