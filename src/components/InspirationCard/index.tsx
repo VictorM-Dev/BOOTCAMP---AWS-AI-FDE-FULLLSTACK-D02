@@ -5,7 +5,7 @@ const InspirationCard = () => {
     <div
       className={clsx(
         "bg-[url('/Images/Inspiration.png')] bg-cover bg-no-repeat bg-center",
-        "w-101 h-145.5 min-w-80 p-6",
+        "max-w-101 w-[90vw] h-120 p-6","md:h-145.5",
         "flex items-end",
       )}
     >
@@ -26,7 +26,7 @@ const InspirationCard = () => {
           <img src="/Icons/line.png" />
           Bed Room
         </h1>
-        <h1 className={clsx("font-semibold text-[28px] text-primary-text-200")}>
+        <h1 className={clsx("font-semibold text-[25px] text-primary-text-200","md:text[28px]")}>
           Inner Peace
         </h1>
       </div>
