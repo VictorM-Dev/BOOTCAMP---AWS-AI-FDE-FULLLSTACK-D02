@@ -10,7 +10,7 @@ const images = [Caroucel1, Caroucel2, Caroucel3, Caroucel4];
 const InspirationCaroucel = () => {
   const [currentImage, setCurrentImage] = useState(0);
   return (
-    <div className={"relative"}>
+    <div className={clsx("relative", "w-[90vw] max-w-md")}>
       <div className={clsx("max-w-md overflow-hidden")}>
         <div
           className={clsx("flex gap-6", "transition-transform duration-500")}
@@ -19,7 +19,7 @@ const InspirationCaroucel = () => {
           }}
         >
           {images.map((image) => (
-            <div className={clsx("overflow-hidden", "min-w-93 h-121.5")}>
+            <div className={clsx("overflow-hidden", "min-w-93 h-121.5")} key={image}>
               <div
                 className={clsx(
                   "bg-cover bg-no-repeat bg-center",
@@ -64,7 +64,8 @@ const InspirationCaroucel = () => {
             "w-12 h-12",
             "flex items-center justify-center",
             "rounded-full",
-            "absolute top-66.75 left-84.25",
+            "absolute md:top-66.75 md:left-84.25",
+            "bottom-0 left-60",
             "hover:scale-110 transition cursor-pointer",
             {
               hidden:
@@ -81,7 +82,8 @@ const InspirationCaroucel = () => {
             "w-12 h-12",
             "flex items-center justify-center",
             "rounded-full",
-            "absolute top-66.75 -left-4",
+            "absolute md:top-66.75 md:-left-4",
+            "bottom-0 left-45",
             "hover:scale-110 transition cursor-pointer",
             {
               hidden: currentImage === 0,
