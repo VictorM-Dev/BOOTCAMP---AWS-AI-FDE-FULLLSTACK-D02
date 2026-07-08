@@ -18,6 +18,7 @@
   --primary-text-100: #666;
   --primaty-text-200: #3A3A3A;
 }
+
 @theme {
   --breakpoint-xxs: 400px;
   --font-montserrat: "Montserrat";
@@ -37,4 +38,15 @@
   --color-primary-text: var(--primary-text);
   --color-primary-text-100: var(--primary-text-100);
   --color-primary-text-200: var(--primary-text-200);
+  
+  --animate-slide-loop: loop 40s linear infinite;
+
+  @keyframes loop {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
 }
