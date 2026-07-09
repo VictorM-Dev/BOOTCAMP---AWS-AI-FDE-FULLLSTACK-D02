@@ -1,5 +1,6 @@
 import clsx from "clsx";
 import { useState } from "react";
+import toast from "react-hot-toast";
 
 const Footer = () => {
   const [email, setEmail] = useState("");
@@ -152,9 +153,13 @@ const Footer = () => {
                 "border-b border-b-black",
                 "cursor-pointer hover:opacity-70",
               )}
+              onClick={()=>{
+                validateEmail(email) ? toast.success("You are subscribed.") : toast.error("Invalid email.");
+              }}
             >
               SUBSCRIBE
             </button>
+          
           </form>
         </div>
       </div>
